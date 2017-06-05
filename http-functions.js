@@ -32,7 +32,7 @@ function getHTML (options, callback) {
 
 
     response.on('end', function(){
-    printHTML(str);
+    callback(str);
     console.log('Response sbuffer ends. ');
   });
 
